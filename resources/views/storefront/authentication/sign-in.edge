@@ -1,0 +1,37 @@
+@layout('storefront/layouts/authentication')
+
+@set('site_title', 'sign-in')
+
+@section('navbar_header')
+<p>Not a member?</p>
+<a href="{{route('authentication.sign-up')}}" class="axil-btn btn-bg-secondary sign-up-btn">Sign Up Now</a> 
+@end
+                        
+@section('form')
+<h3 class="title">Sign in to eTrade.</h3>
+    <p class="b2 mb--55">Enter your detail below</p>
+        <form class="singin-form">
+             <div class="form-group">
+                    <label>Email</label>
+                                <input type="email" class="form-control" name="email" value="annie@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control" name="password" value="123456789">
+                            </div>
+                            <div class="form-group d-flex align-items-center justify-content-between">
+                                <button type="submit" class="axil-btn btn-bg-primary submit-btn">Sign In</button>
+                                <a href="forgot-password.html" class="forgot-btn">Forget password?</a>
+                            </div>
+                        </form>
+@end
+
+
+
+
+
+
+
+
+
+
