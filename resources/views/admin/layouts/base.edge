@@ -56,7 +56,7 @@
       <div class="layout-container">
         <!-- Menu -->
 
-  @!section('menu')
+
         <!-- / Menu -->
 
         <!-- Layout container -->
@@ -174,13 +174,8 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="row gy-4">
-                   @!section('congrat-trantrac')
-
-                   @!section('weekly')
-
-                   @!section('contries')
-
-                   @!section('data-table')
+                    @!section('content')                
+                    @include('admin/partials/menu')
               </div>
             </div>
             <!-- / Content -->
@@ -235,14 +230,7 @@
     </div>
     <!-- / Layout wrapper -->
 
-    <div class="buy-now">
-      <a
-        href="https://themeselection.com/item/materio-bootstrap-html-admin-template/"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-        >Upgrade to Pro</a
-      >
-    </div>
+  
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
